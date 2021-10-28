@@ -1,36 +1,36 @@
-<%@ page language="java" contentType="text/html; charset=EUC-KR"
-    pageEncoding="EUC-KR"%>
+<%@ page language="java" contentType="text/html; charset=UTF-8"
+    pageEncoding="UTF-8"%>
 <%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core" %>
 <!DOCTYPE html>
 <html>
 <head>
-<meta charset="EUC-KR">
+<meta charset="UTF-8">
 <title>list.jsp</title>
 </head>
 <body>
-	<h3>ÀÚÀ¯°Ô½ÃÆÇ ±Û ¸®½ºÆ®</h3>
-	<table width="1000" cellpadding="0" cellspacing="0" border="1">
+	<h3>ìžìœ ê²Œì‹œíŒ ê¸€ ë¦¬ìŠ¤íŠ¸</h3>
+	<table width="700" cellpadding="0" cellspacing="0" border="1">
 		<tr>
-			<td align="center">¹øÈ£</td>
-			<td align="center">±Û¾´ÀÌ</td>
-			<td align="center">±ÛÁ¦¸ñ</td>
-			<td align="center">°Ô½ÃÀÏ</td>
-			<td align="center">Á¶È¸¼ö</td>
+			<td align="center">ë²ˆí˜¸</td>
+			<td align="center">ê¸€ì“´ì´</td>
+			<td align="center">ê¸€ì œëª©</td>
+			<td align="center">ê²Œì‹œì¼</td>
+			<td align="center">ì¡°íšŒìˆ˜</td>
 		</tr>
 		<c:forEach items="${list }" var="dto">		
 		<tr>
 			<td>${dto.bId }</td>
 			<td>${dto.bName }</td>
 			<td>
-				<c:forEach begin="1" end="$dto.bIndent">&nbsp;&nbsp;</c:forEach>
-				<a href="content_view?bId=${dto.bId }">${dto.Title }</a>
+				<c:forEach begin="1" end="${dto.bIndent }">&nbsp;&nbsp;</c:forEach>
+				<a href="content_view?bId=${dto.bId }">${dto.bTitle }</a>
 			</td>
 			<td>${dto.bDate }</td>
 			<td>${dto.bHit }</td>
 		</tr>
 		</c:forEach>
 		<tr>
-			<td><a href="write_view">±Û¾²±â</a></td>
+			<td><a href="write_view">ê¸€ì“°ê¸°</a></td>
 		</tr>
 	</table>
 </body>

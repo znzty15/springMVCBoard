@@ -1,34 +1,38 @@
-<%@ page language="java" contentType="text/html; charset=EUC-KR"
-    pageEncoding="EUC-KR"%>
+<%@ page language="java" contentType="text/html; charset=UTF-8"
+    pageEncoding="UTF-8"%>
 <!DOCTYPE html>
 <html>
 <head>
-<meta charset="EUC-KR">
+<meta charset="UTF-8">
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
 <title>write_view.jsp</title>
 </head>
 <body>
-	<h3>¿⁄¿Ø∞‘Ω√∆« ±€æ≤±‚</h3>
-   <table width="500" cellpadding="0" cellspacing="0" border="1">
-      <form action="write">
-         <tr>
-            <td>¿Ã ∏ß</td>
-            <td><input type="text" name=bName size="65"></td>
-         </tr>
-         <tr>
-            <td>¡¶ ∏Ò</td>
-            <td><input type="text" name=bTitle size="65"></td>
-         </tr>            
-         <tr>
-            <td align="center" colspan="2">≥ª øÎ</td>
-         </tr>
-            <td align="center" colspan="2"><textarea name="bContent" rows="10" cols="65"></textarea></td>
-         <tr>         
-            <td colspan="2"><a href="list">±€ ∏Ò∑œ ∫∏±‚</a></td>
-         </tr>
-         <tr>
-            <td align="center" colspan="2"><input type="submit" value="¿‘∑¬"> &nbsp;&nbsp; <input type="reset" value="√Îº“"></td>
-         </tr>         
-      </form>   
-   </table>
+	<h3>ÏûêÏú†Í≤åÏãúÌåê Í∏ÄÏì∞Í∏∞</h3>
+	<table width="500" cellpadding="0" cellspacing="0" border="1">
+		<form action="write">
+			<tr>
+				<td>Ïù¥ Î¶Ñ</td>
+				<td><input type="text" name=bName size="65"></td>
+			</tr>
+			<tr>
+				<td>Ï†ú Î™©</td>
+				<td><input type="text" name=bTitle size="65"></td>
+			</tr>				
+			<tr>
+				<td align="center" colspan="2">ÎÇ¥ Ïö©</td>
+			</tr>
+				<td align="center" colspan="2"><textarea name="bContent" rows="10" cols="57"></textarea></td>
+			<tr>			
+				<td colspan="2"><a href="list">Í∏Ä Î™©Î°ù Î≥¥Í∏∞</a></td>
+			</tr>
+			<tr>
+				<td align="center" colspan="2"><input type="submit" value="ÏûÖÎ†•"> &nbsp;&nbsp; <input type="reset" value="Ï∑®ÏÜå"></td>
+			</tr>			
+		</form>	
+	</table>	
 </body>
 </html>

@@ -1,42 +1,42 @@
-<%@ page language="java" contentType="text/html; charset=EUC-KR"
-    pageEncoding="EUC-KR"%>
+<%@ page language="java" contentType="text/html; charset=UTF-8"
+    pageEncoding="UTF-8"%>
 <!DOCTYPE html>
 <html>
 <head>
-<meta charset="EUC-KR">
+<meta charset="UTF-8">
 <title>content_view.jsp</title>
 </head>
 <body>
-	<h3>ÀÚÀ¯°Ô½ÃÆÇ ±Û º¸±â</h3>
+	<h3>ììœ ê²Œì‹œíŒ ê¸€ ë³´ê¸°</h3>
 	<table width="500" cellpadding="0" cellspacing="0" border="1">
 		<form action="modify">
          <tr>
-            <td>¹ø È£</td>
+            <td>ë²ˆ í˜¸</td>
             <td>${content_view.bId }</td>
          </tr>
          <tr>
-            <td>Á¶È¸¼ö</td>
+            <td>ì¡°íšŒìˆ˜</td>
             <td>${content_view.bHit }</td>
          </tr>
          <tr>
-            <td>ÀÌ ¸§</td>
-            <td><input type="text" name=bName size="65" value="${content_view.bName }"></td>
+            <td>ì´ ë¦„</td>
+            <td><input type="text" name=bName size="60" value="${content_view.bName }"></td>
          </tr>
          <tr>
-            <td>Á¦ ¸ñ</td>
-            <td><input type="text" name=bTitle size="65" value="${content_view.bTitle }"></td>
+            <td>ì œ ëª©</td>
+            <td><input type="text" name=bTitle size="60" value="${content_view.bTitle }"></td>
          </tr>            
          <tr>
-            <td align="center" colspan="2">³» ¿ë</td>
+            <td align="center" colspan="2">ë‚´ ìš©</td>
          </tr>
-            <td align="center" colspan="2"><textarea name="bContent" rows="10" cols="65">${content_view.bContent }</textarea></td>
+            <td align="center" colspan="2"><textarea name="bContent" rows="10" cols="56">${content_view.bContent }</textarea></td>
          <tr>         
-            <td colspan="2"><a href="list">±Û ¸ñ·Ï º¸±â</a>&nbsp;&nbsp;
-            <a href="reply_view?bId=${content_view.bId }">´ä º¯</a> &nbsp;&nbsp; <a href="delete?bId=${content_view.bId }">»è Á¦</a>
+            <td colspan="2"><a href="list">ê¸€ ëª©ë¡ ë³´ê¸°</a>&nbsp;&nbsp;
+            <a href="reply_view?bId=${content_view.bId }">ë‹µ ë³€</a> &nbsp;&nbsp; <a href="delete?bId=${content_view.bId }">ì‚­ ì œ</a>
             </td>
          </tr>
          <tr>
-            <td align="center" colspan="2"><input type="submit" value="¼öÁ¤"></td>
+            <td align="center" colspan="2"><input type="submit" value="ìˆ˜ì •"></td>
          </tr>         
       </form>
 	
