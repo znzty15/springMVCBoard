@@ -1,4 +1,4 @@
-<%@ page language="java" replyType="text/html; charset=UTF-8"
+<%@ page language="java" contentType="text/html; charset=UTF-8"
     pageEncoding="UTF-8"%>
 <!DOCTYPE html>
 <html>
@@ -33,7 +33,7 @@
          <tr>
             <td align="center" colspan="2">내 용</td>
          </tr>
-            <td align="center" colspan="2"><textarea name="bContent" rows="10" cols="60">${reply_view.bContent }=========================================</textarea></td>
+            <td align="center" colspan="2"><textarea name="bContent" rows="10" cols="55">${reply_view.bContent }=========================================</textarea></td>
          <tr>         
             <td colspan="2"><a href="list">글 목록 보기</a>
             </td>
