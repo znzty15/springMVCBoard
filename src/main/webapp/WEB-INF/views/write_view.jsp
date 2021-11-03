@@ -31,8 +31,8 @@
 			</tr>
 			<tr>
 				<td align="center" colspan="2"><input type="submit" value="입력"> &nbsp;&nbsp; <input type="reset" value="취소"></td>
-			</tr>			
-		</form>	
-	</table>	
+			</tr>
+		</form>
+	</table>
 </body>
 </html>
