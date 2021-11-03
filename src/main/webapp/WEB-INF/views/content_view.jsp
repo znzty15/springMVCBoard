@@ -38,8 +38,7 @@
          <tr>
             <td align="center" colspan="2"><input type="submit" value="수정"></td>
          </tr>         
-      </form>
-	
+      </form>	
 	</table>
 	
 </body>

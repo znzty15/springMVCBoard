@@ -16,6 +16,7 @@ public class BReplyCommand implements BCommand {
 		// TODO Auto-generated method stub
 		Map<String, Object> map = model.asMap();
 		HttpServletRequest request = (HttpServletRequest) map.get("request");
+		
 		String bId = request.getParameter("bId");
 		String bName = request.getParameter("bName");
 		String bTitle = request.getParameter("bTitle");
@@ -26,7 +27,7 @@ public class BReplyCommand implements BCommand {
 		
 		BDao dao = new BDao();
 		dao.reply(bId, bName, bTitle, bContent, bGroup, bStep, bIndent);
-
+		
 	}
 
 }
